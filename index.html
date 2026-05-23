@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Aura Clothing | Premium Streetwear Store</title>
+    <meta
+      name="description"
+      content="Premium oversized streetwear tees, heavyweight cotton drops, COD across India, and sharp Web Aura styling."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <span>FREE COD ALL OVER INDIA</span>
+      <span>30% OFF THIS SEASON</span>
+      <span>Ships in 24 hours</span>
+    </div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Web Aura Clothing home">
+        <span>WEB AURA</span>
+        <small>CLOTHING</small>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#drop">Drop</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#fit">Fit Guide</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" type="button" id="searchToggle" aria-label="Focus product search" title="Search">
+          <span aria-hidden="true">⌕</span>
+        </button>
+        <button class="cart-button" type="button" id="cartOpen" aria-label="Open cart">
+          <span aria-hidden="true">🛒</span>
+          <strong id="cartCount">0</strong>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Web Aura premium streetwear">
+        <picture>
+          <source
+            media="(max-width: 720px)"
+            srcset="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=82"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1800&q=82"
+            alt="Streetwear clothing rack with premium cotton basics"
+          />
+        </picture>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Streetform Oversized Series</p>
+          <h1>WEB AURA CLOTHING</h1>
+          <p>
+            Heavyweight cotton, bold print language, and everyday fits built for people who like their clothes loud but clean.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#catalog">Shop the drop</a>
+            <a class="ghost-link" href="#bestseller">View bestseller</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Store benefits">
+        <div>
+          <strong>240 GSM</strong>
+          <span>Heavyweight cotton</span>
+        </div>
+        <div>
+          <strong>COD</strong>
+          <span>Available across India</span>
+        </div>
+        <div>
+          <strong>7 day</strong>
+          <span>Easy exchange window</span>
+        </div>
+        <div>
+          <strong>₹299+</strong>
+          <span>Season sale pricing</span>
+        </div>
+      </section>
+
+      <section class="drop-section" id="drop">
+        <div class="section-heading">
+          <p class="eyebrow">New movement</p>
+          <h2>Built sharper than the reference</h2>
+          <p>
+            The original has the essentials. This version adds stronger product discovery, clean purchase flow, and a more premium streetwear feel.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature feature-dark">
+            <span>01</span>
+            <h3>Bold first impression</h3>
+            <p>Large product-led hero, clear value, direct shopping actions.</p>
+          </article>
+          <article class="feature">
+            <span>02</span>
+            <h3>Fast catalog</h3>
+            <p>Search, category tabs, price sorting, and visible sale savings.</p>
+          </article>
+          <article class="feature">
+            <span>03</span>
+            <h3>Real cart demo</h3>
+            <p>Sizes, quantities, coupon, subtotal, COD note, and checkout CTA.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="bestseller" id="bestseller">
+        <div class="bestseller-media">
+          <img
+            src="https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&w=1100&q=82"
+            alt="Premium black and white streetwear t-shirts"
+          />
+        </div>
+        <div class="bestseller-copy">
+          <p class="eyebrow">Bestseller</p>
+          <h2>Web Aura DIGNITY Oversized Tee</h2>
+          <p>
+            240 GSM cotton, oversized shoulder, high-density print, and a clean monochrome base for daily rotation.
+          </p>
+          <div class="price-row">
+            <strong>₹499</strong>
+            <span>MRP ₹1,399</span>
+          </div>
+          <button class="primary-button" type="button" data-add-featured>Add to cart</button>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalog">
+        <div class="catalog-top">
+          <div>
+            <p class="eyebrow">Catalog</p>
+            <h2>Shop Web Aura drops</h2>
+          </div>
+          <label class="search-field" for="productSearch">
+            <span aria-hidden="true">⌕</span>
+            <input id="productSearch" type="search" placeholder="Search tees, oversized, cotton..." />
+          </label>
+        </div>
+
+        <div class="shop-controls">
+          <div class="tabs" role="tablist" aria-label="Product categories">
+            <button class="tab is-active" type="button" data-category="all">All</button>
+            <button class="tab" type="button" data-category="oversized">Oversized</button>
+            <button class="tab" type="button" data-category="regular">Regular</button>
+            <button class="tab" type="button" data-category="acid">Acid wash</button>
+          </div>
+          <label class="sort-field" for="sortProducts">
+            Sort
+            <select id="sortProducts">
+              <option value="featured">Featured</option>
+              <option value="low">Price low to high</option>
+              <option value="high">Price high to low</option>
+              <option value="saving">Best savings</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="fit-guide" id="fit">
+        <div>
+          <p class="eyebrow">Fit guide</p>
+          <h2>Pick your streetwear fit</h2>
+        </div>
+        <div class="fit-table" role="table" aria-label="T-shirt fit guide">
+          <div role="row">
+            <strong role="cell">S</strong><span role="cell">Chest 38 in</span><span role="cell">Clean regular fit</span>
+          </div>
+          <div role="row">
+            <strong role="cell">M</strong><span role="cell">Chest 40 in</span><span role="cell">Relaxed shoulder</span>
+          </div>
+          <div role="row">
+            <strong role="cell">L</strong><span role="cell">Chest 42 in</span><span role="cell">Classic oversized</span>
+          </div>
+          <div role="row">
+            <strong role="cell">XL</strong><span role="cell">Chest 44 in</span><span role="cell">Drop-shoulder baggy</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact">
+        <div>
+          <p class="eyebrow">Join the movement</p>
+          <h2>Get launch drops before they sell out.</h2>
+        </div>
+        <form class="newsletter">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" placeholder="Email address" required />
+          <button class="primary-button" type="submit">Sign up</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>WEB AURA CLOTHING</strong>
+        <span>Premium streetwear demo inspired by r4ge.in</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="#catalog">Catalog</a>
+        <a href="#fit">Return policy</a>
+        <a href="#contact">Help</a>
+      </nav>
+    </footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+      <div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+        <div class="cart-head">
+          <h2 id="cartTitle">Your cart</h2>
+          <button class="icon-button" type="button" id="cartClose" aria-label="Close cart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="coupon-row">
+          <input id="couponCode" type="text" placeholder="Coupon: AURA30" />
+          <button type="button" id="applyCoupon">Apply</button>
+        </div>
+        <p class="coupon-message" id="couponMessage"></p>
+        <div class="cart-summary">
+          <div><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+          <div><span>Discount</span><strong id="discount">₹0</strong></div>
+          <div class="grand"><span>Total</span><strong id="total">₹0</strong></div>
+        </div>
+        <button class="checkout-button" type="button">Checkout with COD</button>
+        <p class="cart-note">Demo checkout. Connect Shopify, Razorpay, or WooCommerce for live payments.</p>
+      </div>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
